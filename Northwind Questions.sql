@@ -92,8 +92,10 @@ inner join Orders as ord on ord.OrderID = od.OrderID  where MONTH(OrderDate) = 0
 
 --17) Hangi personelim hangi personelime rapor veriyor?
 
-select e.EmployeeID , m.ManagerName from Employees e 
-inner join Manager m on e.ReportsTo = m.ManagerID
+select es.EmployeeID ,  e.LastName , e.FirstName from Employees	e 
+inner join Employees es on e.EmployeeID = es.ReportsTo
+
+select * from Employees
 
 --18) Hangi ülkeden kaç mü?terimiz var (distinc ve count kullan?lacak)
 
