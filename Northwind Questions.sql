@@ -95,8 +95,6 @@ inner join Orders as ord on ord.OrderID = od.OrderID  where MONTH(OrderDate) = 0
 select es.EmployeeID ,  e.LastName , e.FirstName from Employees	e 
 inner join Employees es on e.EmployeeID = es.ReportsTo
 
-select * from Employees
-
 --18) Hangi ülkeden kaç mü?terimiz var (distinc ve count kullan?lacak)
 
  select DISTINCT country, COUNT(*) as Count from Customers group by Country
