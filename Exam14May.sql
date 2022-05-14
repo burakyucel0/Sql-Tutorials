@@ -2,6 +2,7 @@ Create Table Customer (
  ID int PRIMARY KEY IDENTITY (1, 1),
     FirstName NVARCHAR(50) NOT NULL,
     LastName NVARCHAR(50),
+    Password NVARCHAR(50),
 )
 
 Create Table Login (
