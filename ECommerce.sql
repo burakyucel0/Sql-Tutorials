@@ -34,7 +34,7 @@ ProductID int
 create table ProductCart (
 ID int PRIMARY KEY IDENTITY (1,1),
 ProductID int,
-CartPrice money
+Quantity int
 )
 
 create table Order (
