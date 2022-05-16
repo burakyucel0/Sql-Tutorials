@@ -17,7 +17,8 @@ Price Money
 create table Category (
 TOPID int PRIMARY KEY IDENTITY (1,1),
 ID int UNIQUE ,
-CategoryName NVARCHAR (MAX)
+CategoryName NVARCHAR (MAX),
+Description NVARCHAR(MAX)
 )
 
 create table ProductCategory (
