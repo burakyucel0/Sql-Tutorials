@@ -68,4 +68,3 @@ select * from Sales.SalesOrderHeader soh where soh.Freight < 50
 
 
 
-
